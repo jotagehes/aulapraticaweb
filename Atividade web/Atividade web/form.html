@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Formulario</title>
+	<link rel="stylesheet" href="_css/estilo.css"/>
+</head>
+
+<body>
+	<form method="post" id="fContato" action="mailto:contato@cursoemvideo.com" oninput="calc_total();">
+				<fieldset id="usuario"><legend>Identificação do Usuário</legend>
+				<p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+				
+				<p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos"/></p>
+				
+				<p><label for="cMail">E-mail:</label><input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>
+				
+				<fieldset id="sexo"><legend>Sexo:</legend>
+					<input type="radio" name="tSexo" id="cFem" checked/><label for="cFem">Feminino<br></label>
+					<input type="radio" name="tSexo" id="cMasc"/><label for="cMasc">Masculino</label></fieldset>
+					
+				<p>Data de Nascimento:<input type="date" name"tNasc" id="cNasc"></p>
+				</fieldset>
+					<input type="image" name="tEnviar" src="botao-enviar.png"/>
+			</form>
+</body>
+</html>
